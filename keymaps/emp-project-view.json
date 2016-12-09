@@ -1,5 +1,32 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "emp-project-view:toggle"
+    "ctrl-alt-p": "emp-project-view:toggle"
+  },
+  ".proj-view":{
+    "right":"proj-view:expand-item",
+    "left":"proj-view:collapse-directory",
+    "ctrl-]": "proj-view:expand-item",
+    "ctrl-[": "proj-view:collapse-directory",
+    "alt-ctrl-]": "proj-view:recursive-expand-directory",
+    "alt-right": "proj-view:recursive-expand-directory",
+    "alt-ctrl-[": "proj-view:recursive-collapse-directory",
+    "alt-left": "proj-view:recursive-collapse-directory",
+    "delete": "proj-view:remove",
+    "backspace": "proj-view:remove",
+    "home": "core:move-to-top",
+    "end": "core:move-to-bottom"
+
+  },
+  ".platform-darwin .proj-view":{
+    "cmd-c": "proj-view:copy",
+    "cmd-x": "proj-view:cut",
+    "cmd-v": "proj-view:paste",
+    "ctrl-f": "proj-view:expand-item",
+    "ctrl-b": "proj-view:collapse-directory"
+  },
+  ".platform-win32 .proj-view, .platform-linux .proj-view":{
+    "ctrl-c": "proj-view:copy",
+    "ctrl-x": "proj-view:cut",
+    "ctrl-v": "proj-view:paste"
   }
 }

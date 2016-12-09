@@ -5,6 +5,26 @@
         "label": "Toggle emp-project-view",
         "command": "emp-project-view:toggle"
       }
+    ],
+    ".proj-view.full-menu": [
+      {"label": "New File", "command": "proj-view:add-file"},
+      {"label": "New Folder", "command": "proj-view:add-folder"},
+      {"type": "separator"},
+
+      {"label": "Rename", "command": "proj-view:move"},
+      {"label": "Duplicate", "command": "proj-view:duplicate"},
+      {"label": "Delete", "command": "proj-view:remove"},
+      {"label": "Copy", "command": "proj-view:copy"},
+      {"label": "Cut", "command": "proj-view:cut"},
+      {"label": "Paste", "command": "proj-view:paste"},
+      {"type": "separator"},
+
+      {"label": "Add Project Folder", "command": "application:add-project-folder"},
+      {"type": "separator"},
+
+      {"label": "Copy Full Path", "command": "proj-view:copy-full-path"},
+      {"label": "Copy Project Path", "command": "proj-view:copy-project-path"},
+      {"label": "Open In New Window", "command": "proj-view:open-in-new-window"}
     ]
   },
   "menu": [
